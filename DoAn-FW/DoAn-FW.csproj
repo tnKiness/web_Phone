@@ -6,6 +6,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Areas\BH\**" />
+    <Compile Remove="Areas\TT\**" />
+    <Content Remove="Areas\BH\**" />
+    <Content Remove="Areas\TT\**" />
+    <EmbeddedResource Remove="Areas\BH\**" />
+    <EmbeddedResource Remove="Areas\TT\**" />
+    <None Remove="Areas\BH\**" />
+    <None Remove="Areas\TT\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="Views\Home\Index.cshtml" />
     <None Include="Views\Shared\Error.cshtml" />
     <None Include="Views\Shared\_Layout.cshtml" />
@@ -51,12 +62,8 @@
 
   <ItemGroup>
     <Folder Include="Areas\Admin\Data\" />
-    <Folder Include="Areas\BH\Data\" />
-    <Folder Include="Areas\BH\Models\" />
     <Folder Include="Areas\GH\Data\" />
     <Folder Include="Areas\GH\Models\" />
-    <Folder Include="Areas\TT\Data\" />
-    <Folder Include="Areas\TT\Models\" />
   </ItemGroup>
 
 </Project>

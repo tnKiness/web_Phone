@@ -114,8 +114,7 @@
                                             </div>
                                             <div class="panel-body">
                                                 <ul style="list-style:none">
-                                                    @foreach (var hang in ModelLoaiSP)
-                                                    {
+                                                    @foreach (var hang in ModelLoaiSP){
                                                         <li>
                                                             <input type="checkbox" name="MaLoaiSP" value="@hang.GetType().GetProperty("MaLoaiSP").GetValue(hang, null)">
                                                             @hang.GetType().GetProperty("TenLoaiSP").GetValue(hang, null).ToString()

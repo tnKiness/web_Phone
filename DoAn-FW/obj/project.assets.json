@@ -8933,11 +8933,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Web_Project\\PhoneStore-main\\Soure\\DoAn-FW\\DoAn-FW\\DoAn-FW.csproj",
+      "projectUniqueName": "C:\\Users\\Admin1\\Downloads\\web_Phone_ver0.0.2\\web_Phone\\DoAn-FW\\DoAn-FW.csproj",
       "projectName": "DoAn-FW",
-      "projectPath": "C:\\Web_Project\\PhoneStore-main\\Soure\\DoAn-FW\\DoAn-FW\\DoAn-FW.csproj",
+      "projectPath": "C:\\Users\\Admin1\\Downloads\\web_Phone_ver0.0.2\\web_Phone\\DoAn-FW\\DoAn-FW.csproj",
       "packagesPath": "C:\\Users\\Admin1\\.nuget\\packages\\",
-      "outputPath": "C:\\Web_Project\\PhoneStore-main\\Soure\\DoAn-FW\\DoAn-FW\\obj\\",
+      "outputPath": "C:\\Users\\Admin1\\Downloads\\web_Phone_ver0.0.2\\web_Phone\\DoAn-FW\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

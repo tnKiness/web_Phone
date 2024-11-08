@@ -28,11 +28,12 @@ namespace DoAn_FW.Areas.GH.Controllers
             this.ViewBag.SoGHCG = soghcg;
         }
 
-        public ActionResult Index(int y = 2021)
+        public ActionResult Index(int y = 0)
         {
             DataNV();
-            if (y != null && y != 0)
+            if (y == 0)
             {
+                y = DateTime.Now.Year;
                 var context = new ThongKe();
                 this.ViewBag.DTT1 = context.DoanhThuThang(1, y);
                 this.ViewBag.DTT2 = context.DoanhThuThang(2, y);
@@ -59,25 +60,34 @@ namespace DoAn_FW.Areas.GH.Controllers
             this.ViewBag.Nam = y;
             return View(context.GetHDsTheoThang(m, y));
         }
-        public ActionResult DSKH(int y = 2021)
+        public ActionResult DSKH(int y = 0)
         {
             DataNV();
+            if (y == 0)
+            {
+                y = DateTime.Now.Year;
+            }
             var context = new ThongKe();
             this.ViewBag.Nam = y;
             return View(context.Top3KH(y));
         }
-        public ActionResult DSSP(int y = 2021)
+        public ActionResult DSSP(int y = 0)
         {
             DataNV();
+            if (y == 0)
+            {
+                y = DateTime.Now.Year;
+            }
             var context = new ThongKe();
             this.ViewBag.Nam = y;
             return View(context.DSSP(y));
         }
-        public ActionResult ChiPhi(int y = 2021)
+        public ActionResult ChiPhi(int y = 0)
         {
             DataNV();
-            if (y != null && y != 0)
+            if (y == 0)
             {
+                y = DateTime.Now.Year;
                 var context = new ThongKe();
                 this.ViewBag.DTT1 = context.ChiPhiThang(1, y);
                 this.ViewBag.DTT2 = context.ChiPhiThang(2, y);

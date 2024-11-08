@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "C20Ben3VToA=",
+  "dgSpecHash": "y5A3g48MQ9o=",
   "success": true,
-  "projectFilePath": "C:\\Web_Project\\PhoneStore-main\\Soure\\DoAn-FW\\DoAn-FW\\DoAn-FW.csproj",
+  "projectFilePath": "C:\\Users\\Admin1\\Downloads\\web_Phone_ver0.0.2\\web_Phone\\DoAn-FW\\DoAn-FW.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin1\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\Admin1\\.nuget\\packages\\google.protobuf\\3.14.0\\google.protobuf.3.14.0.nupkg.sha512",

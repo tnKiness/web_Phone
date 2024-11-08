@@ -33,6 +33,9 @@
 </div>
 <!-- End mainmenu area -->
 
+<!-- Advertisement popup --> 
+@await Html.PartialAsync("overlay")
+
 <div class="product-big-title-area">
     <div class="container">
         <div class="row">
@@ -44,60 +47,32 @@
         </div>
     </div>
 </div>
+
 <div class="slider-area">
     <!-- Slider -->
     <div class="block-slider block-slider4">
         <ul class="" id="bxslider-home4">
             <li>
-                <img src="~/img/h4-slide.png" alt="Slide" />
-                <div class="caption-group">
-                    <h2 class="caption title">
-                        iPhone
-                        <span class="primary">6 <strong>Plus</strong></span>
-                    </h2>
-                    <h4 class="caption subtitle">Dual SIM</h4>
+                <img src="~/img/slide.png" alt="Slide" />
                     <a class="caption button-radius" href="#"><span class="icon"></span>Shop now</a>
-                </div>
             </li>
             <li>
-                <img src="~/img/h4-slide2.png" alt="Slide" />
-                <div class="caption-group">
-                    <h2 class="caption title">
-                        by one, get one
-                        <span class="primary">50% <strong>off</strong></span>
-                    </h2>
-                    <h4 class="caption subtitle">
-                        school supplies & backpacks.*
-                    </h4>
+                <img src="~/img/slide2.png" alt="Slide" />
                     <a class="caption button-radius" href="#"><span class="icon"></span>Shop now</a>
-                </div>
             </li>
             <li>
-                <img src="~/img/h4-slide3.png" alt="Slide" />
-                <div class="caption-group">
-                    <h2 class="caption title">
-                        Apple
-                        <span class="primary">Store <strong>Ipod</strong></span>
-                    </h2>
-                    <h4 class="caption subtitle">Select Item</h4>
+                <img src="~/img/slide3.png" alt="Slide" />
                     <a class="caption button-radius" href="#"><span class="icon"></span>Shop now</a>
-                </div>
             </li>
             <li>
-                <img src="~/img/h4-slide4.png" alt="Slide" />
-                <div class="caption-group">
-                    <h2 class="caption title">
-                        Apple
-                        <span class="primary">Store <strong>Ipod</strong></span>
-                    </h2>
-                    <h4 class="caption subtitle">& Phone</h4>
+                <img src="~/img/slide4.png" alt="Slide" />
                     <a class="caption button-radius" href="#"><span class="icon"></span>Shop now</a>
-                </div>
             </li>
         </ul>
     </div>
 </div>
 <!-- End slider area -->
+
 <div class="maincontent-area">
     <div class="zigzag-bottom"></div>
     <div class="container">
@@ -179,3 +154,60 @@
         </div>
     </div>
 </div>
+<!--<<Châu>>-->
+<!--Xử lý overlay Adv-->
+<script>
+    function showAd() {
+        document.getElementById("ad-popup").style.display = "flex";
+    }
+    function closeAd() {
+        document.getElementById("ad-popup").style.display = "none";
+    }
+    window.onload = function() {
+        showAd();
+    };
+</script>
+
+<style>
+    /* Đảm bảo slider chiếm toàn bộ chiều rộng của khung chứa */
+    .slider-area {
+        width: 90%;
+        position: relative;
+    }
+
+    .block-slider {
+        width: 100%;
+    }
+
+    #bxslider-home4 {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+        #bxslider-home4 li {
+            display: flex;
+            justify-content: center; /* Căn giữa theo chiều ngang */
+            align-items: center; /* Căn giữa theo chiều dọc */
+            position: relative;
+        }
+
+            #bxslider-home4 li img {
+                max-width: 90%;
+                height: auto;
+                display: block; /* Ngăn việc thêm không gian dư thừa xung quanh hình ảnh */
+            }
+
+    /* Căn giữa nút 'Shop now' và tùy chỉnh */
+    .caption.button-radius {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        border-radius: 20px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+</style>
